@@ -14,30 +14,55 @@ def divide(num_1, num_2):
     return(num_1 / num_2)
 
 def length_of_string(string):
-    return(len(string))
+    return len(string)
 
 def join_string(string_1, string_2):
-    return(string_1 + string_2)
+    return string_1 + string_2
 
 def add_string_as_number(num_1, num_2):
-    return(int(num_1) + int(num_2))
+    return int(num_1) + int(num_2)
 
 
 def number_to_full_month_name(num):
+   
+#    months = {
+#     1: "January",
+#     2: "February"
+#    }
+
+#    return months[month_number]
+
+# months = [
+#     "January, February"
+# ]
+
+# return months[month_number -1]
+
     if num == 1:
         return("January")
-    if num == 3:
+    elif num == 3:
         return("March")
-    if num == 9:
+    elif num == 9:
         return("September")
 
 def number_to_short_month_name(num):
     if num == 1:
         return("Jan")
-    if num == 4:
+    elif num == 4:
         return("Apr")
-    if num == 10:
+    elif num == 10:
         return("Oct")
+
+
+# alt method for solving string_reverse test
+def string_reverse(str):
+    "".join(reversed(str))
+
+# string = "Banana"
+# string[::-1]
+
+
+
 
 
 
